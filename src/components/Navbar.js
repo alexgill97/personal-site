@@ -2,12 +2,12 @@ import React from "react"
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center mx-auto px-8 py-5 md:px-24 lg:px-24 w-full">
+    <nav className="flex flex-nowrap justify-between items-center mx-auto px-8 py-5 md:px-24 lg:px-24 w-full">
       <section>
-        <div className="text-5xl font-bold">Alex Gillespie</div>
+        <div className="text-3xl font-bold">Alex Gillespie</div>
       </section>
-      <section className="hidden md:flex space-x-12 items-center">
-        <a href="#work">My Work</a>
+      <section className="hidden md:flex space-x-12 items-center text-lg">
+        <a href="#work">Projects</a>
 
         <a href="#resume">Resume</a>
 
