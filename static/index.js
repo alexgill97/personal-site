@@ -1,11 +1,34 @@
-import html from "./tech-logos/html.svg"
-export const css = require("./tech-logos/css.svg")
-export const javascript = require("./tech-logos/javascript.svg")
-// export const html = require("./tech-logos/html.svg")
-// import css from "./html.svg"
-// import javascript from "./html.svg"
-// import html from "./html.svg"
-// import html from "./html.svg"
-// import html from "./html.svg"
+//Front End
+import htmlLogo from "./tech-logos/html.svg"
+import cssLogo from "./tech-logos/css.svg"
+import javascriptLogo from "./tech-logos/javascript.svg"
+import reactLogo from "./tech-logos/react.svg"
+import nextLogo from "./tech-logos/next.svg"
+import gatsbyLogo from "./tech-logos/gatsby.svg"
+import tailwindLogo from "./tech-logos/tailwind.svg"
+import sassLogo from "./tech-logos/sass.svg"
+import jqueryLogo from "./tech-logos/jquery.svg"
 
-export { html }
+//Back End
+import firebaseLogo from "./tech-logos/firebase.svg"
+import postgresqlLogo from "./tech-logos/postgresql.svg"
+import rubyLogo from "./tech-logos/ruby.svg"
+// import expressLogo from "./tech-logos/express.svg"
+// import nodeLogo from "./tech-logos/node.svg"
+
+//Tools
+import cypressLogo from "./tech-logos/cypress.svg"
+// import jestLogo from "./tech-logos/jest.svg"
+// import gitLogo from "./tech-logos/git.svg"
+
+export {
+  htmlLogo,
+  cssLogo,
+  javascriptLogo,
+  reactLogo,
+  nextLogo,
+  gatsbyLogo,
+  tailwindLogo,
+  sassLogo,
+  jqueryLogo,
+}
