@@ -13,13 +13,13 @@ import jqueryLogo from "./tech-logos/jquery.svg"
 import firebaseLogo from "./tech-logos/firebase.svg"
 import postgresqlLogo from "./tech-logos/postgresql.svg"
 import rubyLogo from "./tech-logos/ruby.svg"
-// import expressLogo from "./tech-logos/express.svg"
-// import nodeLogo from "./tech-logos/node.svg"
+import expressLogo from "./tech-logos/express.svg"
+import nodeLogo from "./tech-logos/node.svg"
 
-//Tools
+//Utilities
 import cypressLogo from "./tech-logos/cypress.svg"
-// import jestLogo from "./tech-logos/jest.svg"
-// import gitLogo from "./tech-logos/git.svg"
+import jestLogo from "./tech-logos/jest.svg"
+import gitLogo from "./tech-logos/git.svg"
 
 export {
   htmlLogo,
@@ -31,4 +31,9 @@ export {
   tailwindLogo,
   sassLogo,
   jqueryLogo,
+  firebaseLogo,
+  postgresqlLogo,
+  rubyLogo,
+  expressLogo,
+  nodeLogo,
 }
