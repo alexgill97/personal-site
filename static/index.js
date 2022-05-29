@@ -14,12 +14,16 @@ import firebaseLogo from "./tech-logos/firebase.svg"
 import postgresqlLogo from "./tech-logos/postgresql.svg"
 import rubyLogo from "./tech-logos/ruby.svg"
 import expressLogo from "./tech-logos/express.svg"
-import nodeLogo from "./tech-logos/node.svg"
+import nodeLogo from "./tech-logos/nodejs.svg"
+import puppeteerLogo from "./tech-logos/puppeteer.svg"
 
 //Utilities
 import cypressLogo from "./tech-logos/cypress.svg"
 import jestLogo from "./tech-logos/jest.svg"
 import gitLogo from "./tech-logos/git.svg"
+import stripeLogo from "./tech-logos/stripe.svg"
+import mochaLogo from "./tech-logos/mocha.svg"
+import chaiLogo from "./tech-logos/chai.svg"
 
 export {
   htmlLogo,
@@ -36,4 +40,11 @@ export {
   rubyLogo,
   expressLogo,
   nodeLogo,
+  puppeteerLogo,
+  cypressLogo,
+  jestLogo,
+  gitLogo,
+  stripeLogo,
+  mochaLogo,
+  chaiLogo,
 }

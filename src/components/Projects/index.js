@@ -1,24 +1,14 @@
 import React from "react"
 import Project from "./Project"
-import MapImage from "../../static/map.png"
+import MapImage from "../../../static/map.png"
 
 const Projects = () => {
   return (
     <div className="px-40 ">
       <div className="mb-5 secondary-title">Projects</div>
-      <div className="grid md:grid-cols-3 gap-10">
-        <div className="col-span-2">
-          <Project image={MapImage} title={1} />
-        </div>
-        <div className="border-2 border-rose-600 ">
-          <Project image={MapImage} title={2} />
-        </div>
-        <div className="border-2 border-rose-600">
-          <Project image={MapImage} title={3} />
-        </div>
-        <div className="col-span-2">
-          <Project image={MapImage} title={4} />
-        </div>
+      <div>
+        <Project image={MapImage} />
+        <Project image={MapImage} />
       </div>
       <div className="flex justify-end">
         <a

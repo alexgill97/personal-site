@@ -10,6 +10,18 @@ import {
   tailwindLogo,
   sassLogo,
   jqueryLogo,
+  firebaseLogo,
+  postgresqlLogo,
+  rubyLogo,
+  expressLogo,
+  nodeLogo,
+  puppeteerLogo,
+  cypressLogo,
+  jestLogo,
+  gitLogo,
+  stripeLogo,
+  mochaLogo,
+  chaiLogo,
 } from "../../../static/index"
 
 const frontEndSkills = [
@@ -25,19 +37,21 @@ const frontEndSkills = [
 ]
 
 const backEndSkills = [
-  ["Firebase", htmlLogo],
-  ["NodeJS", cssLogo],
-  ["Ruby", javascriptLogo],
-  ["PostgreSQL", nextLogo],
-  ["Puppeteer", nextLogo],
-  ["Puppeteer", nextLogo],
+  ["Firebase", firebaseLogo],
+  ["NodeJS", nodeLogo],
+  ["Ruby", rubyLogo],
+  ["PostgreSQL", postgresqlLogo],
+  ["Express", expressLogo],
+  ["Puppeteer", puppeteerLogo],
 ]
 const utilitiesSkills = [
-  ["Git", htmlLogo],
-  ["Cypress", cssLogo],
+  ["Git", gitLogo],
+  ["Cypress", cypressLogo],
+  ["Jest", jestLogo],
   ["Docker", javascriptLogo],
-  ["Jest", nextLogo],
-  ["Stripe", nextLogo],
+  ["Stripe", stripeLogo],
+  ["Mocha", mochaLogo],
+  ["Chai", chaiLogo],
 ]
 
 const Skills = () => {
