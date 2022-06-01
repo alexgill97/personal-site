@@ -1,14 +1,41 @@
 import React from "react"
 import Project from "./Project"
 import MapImage from "../../../static/map.png"
+import { nextLogo, firebaseLogo, sassLogo } from "../../../static/index"
+
+const projectData = {
+  title: "Content Connector",
+  description:
+    "A streamlined content solution connecting businesses with local digital media creators.",
+  image: MapImage,
+  link: "https://github.com/alexgill97/Content-Connector",
+  technologies: [
+    ["NextJS", nextLogo],
+    ["Firebase", firebaseLogo],
+    ["SASS", sassLogo],
+  ],
+}
 
 const Projects = () => {
   return (
-    <div className="px-40 ">
+    <div className="px-40">
       <div className="mb-5 secondary-title">Projects</div>
-      <div>
-        <Project image={MapImage} />
-        <Project image={MapImage} />
+      <div className="flex flex-col ">
+        <Project
+          title={projectData.title}
+          description={projectData.description}
+          image={projectData.image}
+          link={projectData.link}
+          technologies={projectData.technologies}
+        />
+
+        <Project
+          title={projectData.title}
+          description={projectData.description}
+          image={projectData.image}
+          link={projectData.link}
+          technologies={projectData.technologies}
+        />
       </div>
       <div className="flex justify-end">
         <a
@@ -16,7 +43,7 @@ const Projects = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button class="px-8 py-4 bg-black text-white font-bold mt-12 flex items-center space-x-3">
+          <button class="px-8 py-4 bg-black text-white font-bold mt-3 flex items-center space-x-3">
             <div>
               <svg
                 width="22"

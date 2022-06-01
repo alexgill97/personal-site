@@ -4,7 +4,7 @@ const displaySkills = skillsArr =>
   skillsArr.map(skill => (
     <div className="flex flex-col items-center h-15 xl:h-30 select-none">
       <img className="h-full w-full " src={skill[1]} alt={skill[0]} />
-      <h5>{skill[0]}</h5>
+      <h5 className="whitespace-pre-line">{skill[0]}</h5>
     </div>
   ))
 
