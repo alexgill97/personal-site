@@ -17,7 +17,7 @@ const ProjectLarge = ({ title, description, image, link, technologies }) => {
         </div>
         <div className="mt-3">
           <h5>Technologies Used:</h5>
-          <div className=" mt-2 flex h-20 justify-evenly justify-center">
+          <div className=" mt-5 flex h-20 justify-evenly justify-center">
             {technologies.map(tech => (
               <div key={tech[0]} className="flex flex-col align-center">
                 <img className="h-1/2 mb-1" src={tech[1]} />

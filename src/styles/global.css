@@ -5,6 +5,7 @@
 html,
 body {
   background-color: rgb(23, 23, 31);
+  /* background-color: #020013; */
   color: white;
   font-family: "Poppins";
   scroll-behavior: smooth;

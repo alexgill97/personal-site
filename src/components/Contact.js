@@ -1,22 +1,50 @@
-import React from "react"
-import resumeIcon from "../../static/resume.svg"
+import React, { useRef } from "react"
+import emailjs from "@emailjs/browser"
 
 const Contact = () => {
+  const form = useRef()
+
+  const sendEmail = e => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        "service_jmyk20c",
+        "template_1e2d949",
+        form.current,
+        "S5ybjaYXpP2uBS91R"
+      )
+      .then(
+        result => {
+          console.log(result.text)
+        },
+        error => {
+          console.log(error.text)
+        }
+      )
+    console.log(form)
+    form.current.reset()
+  }
+
   return (
-    <section className="container max-h-screen my-10 flex justify-between items-center mx-auto p-8 md:px-14 lg:px-24 w-full">
+    <section className="container mt-16 max-h-screen flex justify-between items-center mx-auto p-8 md:px-14 lg:px-24 w-full">
       <div className="w-full">
         <h2 className="secondary-title">Contact</h2>
         <p class="text-secondary my-6 w-full max-w-3xl">
-          Feel free to to contact me any time, through any method below.
+          Feel free to to contact me at any time, through a method below.
         </p>
 
         <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-10">
-          <div class="space-y-12">
+          <form ref={form} onSubmit={sendEmail} class="space-y-12">
             <div>
               <label class="text-white block mb-6 text-xl font-bold">
                 Name
               </label>
-              <input class="w-full border border-input-border bg-input px-4 py-4" />
+              <input
+                type="text"
+                name="user_name"
+                class="w-full border border-input-border bg-input px-4 py-4"
+              />
             </div>
             <div>
               <label class="text-white block mb-6 text-xl font-bold">
@@ -24,6 +52,7 @@ const Contact = () => {
               </label>
               <input
                 type="email"
+                name="user_email"
                 class="w-full border border-input-border bg-input px-4 py-4"
               />
             </div>
@@ -32,14 +61,14 @@ const Contact = () => {
                 Message
               </label>
               <textarea
-                type="email"
+                name="message"
                 class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"
-              ></textarea>
+              />
             </div>
             <button class="px-6 py-2 bg-theme text-white font-bold">
               Send it!
             </button>
-          </div>
+          </form>
 
           <div class="mt-12">
             <p class="text-secondary">647-989-1997</p>
@@ -54,7 +83,33 @@ const Contact = () => {
               <a href="#">
                 <resumeIcon />
               </a>
-
+              <a
+                href="https://github.com/alexgill97"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="px-8 py-4 bg-black text-white font-bold mt-3 flex items-center space-x-3">
+                  <div>
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.4375 11C14.4375 11.9117 14.0753 12.786 13.4307 13.4307C12.786 14.0753 11.9117 14.4375 11 14.4375C10.0883 14.4375 9.21398 14.0753 8.56932 13.4307C7.92466 12.786 7.5625 11.9117 7.5625 11C7.5625 10.0883 7.92466 9.21398 8.56932 8.56932C9.21398 7.92466 10.0883 7.5625 11 7.5625C11.9117 7.5625 12.786 7.92466 13.4307 8.56932C14.0753 9.21398 14.4375 10.0883 14.4375 11Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M0 11C0 11 4.125 3.4375 11 3.4375C17.875 3.4375 22 11 22 11C22 11 17.875 18.5625 11 18.5625C4.125 18.5625 0 11 0 11ZM11 15.8125C12.2764 15.8125 13.5004 15.3055 14.403 14.403C15.3055 13.5004 15.8125 12.2764 15.8125 11C15.8125 9.72365 15.3055 8.49957 14.403 7.59705C13.5004 6.69453 12.2764 6.1875 11 6.1875C9.72365 6.1875 8.49957 6.69453 7.59705 7.59705C6.69453 8.49957 6.1875 9.72365 6.1875 11C6.1875 12.2764 6.69453 13.5004 7.59705 14.403C8.49957 15.3055 9.72365 15.8125 11 15.8125Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <span>Github</span>
+                </button>
+              </a>
               <a href="#">
                 <svg
                   class="w-8 h-8 lg:w-12 lg:h-12"
