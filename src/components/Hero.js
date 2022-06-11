@@ -1,11 +1,12 @@
 import React from "react"
+import headshot from "../../static/headshot-test.png"
 
 const Hero = () => {
   return (
-    <div className="container mt-16 flex justify-between items-center mx-auto px-8 md:px-24 lg:px-24 w-full">
-      <div className="flex flex-wrap md:flex-nowrap">
+    <div className="container mt-16 flex justify-between items-center mx-auto px-8 md:px-24 lg:px-24 w-full overflow-clip">
+      <div className="flex flex-wrap overflow-hidden md:flex-nowrap">
         <div className="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:mt-36">
-          <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">
+          <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left z-20">
             Creating <br /> Dynamic Web Solutions.
           </h1>
           <button class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
@@ -30,6 +31,12 @@ const Hero = () => {
             <span>View my work.</span>
           </button>
         </div>
+
+        <img
+          className="object-cover md:w-full md:h-full mt-2 md:absolute md:-mt-32 left-60 xl:w-3/4 xl:left-96 2xl:w-1/2 2xl:left-96 2xl:ml-96 -z-1 "
+          src={headshot}
+          alt=""
+        />
       </div>
     </div>
   )

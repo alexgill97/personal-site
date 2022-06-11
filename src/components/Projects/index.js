@@ -18,9 +18,17 @@ const projectData = {
 
 const Projects = () => {
   return (
-    <div className=" px-8 md:px-14 lg:px-24 w-full">
+    <div className="px-8 md:px-14 lg:px-24 w-full">
       <div className="mb-5 secondary-title">Projects</div>
       <div className="flex flex-col ">
+        <Project
+          title={projectData.title}
+          description={projectData.description}
+          image={projectData.image}
+          link={projectData.link}
+          technologies={projectData.technologies}
+        />
+
         <Project
           title={projectData.title}
           description={projectData.description}

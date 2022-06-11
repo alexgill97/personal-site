@@ -25,6 +25,9 @@ import stripeLogo from "./tech-logos/stripe.svg"
 import mochaLogo from "./tech-logos/mocha.svg"
 import chaiLogo from "./tech-logos/chai.svg"
 
+//Other
+import githubLogo from "./tech-logos/github.svg"
+
 export {
   htmlLogo,
   cssLogo,
@@ -47,4 +50,5 @@ export {
   stripeLogo,
   mochaLogo,
   chaiLogo,
+  githubLogo,
 }

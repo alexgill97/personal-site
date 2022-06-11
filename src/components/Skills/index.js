@@ -56,7 +56,7 @@ const utilitiesSkills = [
 
 const Skills = () => {
   return (
-    <section className="container rounded-3xl box md:h-screen flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <section className="px-8 md:h-screen mt-36 md:px-14 lg:px-24 w-full">
       <div className="w-full">
         <h2 className="secondary-title">Skills</h2>
         <p class="text-secondary my-6 w-full max-w-3xl">
@@ -64,7 +64,7 @@ const Skills = () => {
           journey.
         </p>
 
-        <div className="container mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 sm:divide-y md:divide-y-0 md:divide-x md:divide-opacity-50">
+        <div className="container mt-12 grid grid-cols-1 md:grid-cols-3 sm:divide-y md:divide-y-0 md:divide-x md:divide-opacity-50">
           <Skill skillTitle={"Front End"} skillsArr={frontEndSkills} />
           <Skill skillTitle={"Back End"} skillsArr={backEndSkills} />
           <Skill skillTitle={"Utilities"} skillsArr={utilitiesSkills} />
