@@ -7,7 +7,7 @@ const projectData = {
   title: "Content Connector",
   description:
     "A streamlined content solution connecting businesses with local digital media creators.",
-  image: MapImage,
+  images: [MapImage, MapImage, MapImage, MapImage],
   link: "https://github.com/alexgill97/Content-Connector",
   technologies: [
     ["NextJS", nextLogo],
@@ -24,23 +24,21 @@ const Projects = () => {
         <Project
           title={projectData.title}
           description={projectData.description}
-          image={projectData.image}
+          images={projectData.images}
           link={projectData.link}
           technologies={projectData.technologies}
         />
-
         <Project
           title={projectData.title}
           description={projectData.description}
-          image={projectData.image}
+          images={projectData.images}
           link={projectData.link}
           technologies={projectData.technologies}
         />
-
         <Project
           title={projectData.title}
           description={projectData.description}
-          image={projectData.image}
+          images={projectData.images}
           link={projectData.link}
           technologies={projectData.technologies}
         />

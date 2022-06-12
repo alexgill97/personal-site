@@ -1,6 +1,7 @@
 import React from "react"
+import Slider from "../Slider"
 
-const ProjectLarge = ({ title, description, image, link, technologies }) => {
+const Project = ({ title, description, images, link, technologies }) => {
   return (
     <section className="container flex flex-col md:flex-row min-h-fit h-full border overflow-contain p-5 my-4">
       {/* Left Section */}
@@ -31,7 +32,7 @@ const ProjectLarge = ({ title, description, image, link, technologies }) => {
       {/* Right Section */}
       <div className="bg-theme w-full md:w-1/2 h-fit">
         <div className="shadow-bottom">
-          <img className="object-cover" src={image} alt="" />
+          <Slider images={images} />
         </div>
         <div className="p-5 flex flex-col items-center content-center justify-center justify-items-center	">
           <div className="text-lg mb-2">{title}</div>
@@ -48,4 +49,4 @@ const ProjectLarge = ({ title, description, image, link, technologies }) => {
   )
 }
 
-export default ProjectLarge
+export default Project
