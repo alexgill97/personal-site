@@ -30,11 +30,11 @@ const Project = ({ title, description, images, link, technologies }) => {
       </div>
 
       {/* Right Section */}
-      <div className="bg-theme w-full md:w-1/2 h-fit">
-        <div className="shadow-bottom">
+      <div className="bg-theme w-full lg:w-3/4 h-full">
+        <div className="w-full h-80">
           <Slider images={images} />
         </div>
-        <div className="p-5 flex flex-col items-center content-center justify-center justify-items-center	">
+        <div className="h-1/2 p-5 flex flex-col items-center content-center justify-center justify-items-center	">
           <div className="text-lg mb-2">{title}</div>
           <div className="text-sm text-slate-300">{description}</div>
           <div className="flex justify-around mt-4">

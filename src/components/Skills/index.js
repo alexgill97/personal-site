@@ -64,7 +64,7 @@ const Skills = () => {
           journey.
         </p>
 
-        <div className="container mt-12 grid grid-cols-1 md:grid-cols-3 sm:divide-y md:divide-y-0 md:divide-x md:divide-opacity-50">
+        <div className="container mt-12 grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x md:divide-opacity-50">
           <Skill skillTitle={"Front End"} skillsArr={frontEndSkills} />
           <Skill skillTitle={"Back End"} skillsArr={backEndSkills} />
           <Skill skillTitle={"Utilities"} skillsArr={utilitiesSkills} />

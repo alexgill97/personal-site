@@ -32,7 +32,10 @@ const Slider = ({ images }) => {
           key={index}
           className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
         >
-          <img src={image} />
+          <img
+            className="h-full w-full object-cover lg:object-fill"
+            src={image}
+          />
         </div>
       ))}
       <BtnSlider moveSlide={nextSlide} direction={"next"} />
