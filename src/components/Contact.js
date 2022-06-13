@@ -1,8 +1,11 @@
 import React, { useRef } from "react"
 import emailjs from "@emailjs/browser"
 import { githubLogo } from "../../static"
+import { useState } from "react"
 
 const Contact = () => {
+  const [sent, setSent] = useState(false)
+
   const form = useRef()
 
   const sendEmail = e => {
@@ -17,18 +20,21 @@ const Contact = () => {
       )
       .then(
         result => {
-          console.log(result.text)
+          setSent(true)
+          setTimeout(() => {
+            setSent(false)
+          }, 5000)
         },
         error => {
           console.log(error.text)
         }
       )
-    console.log(form)
+
     form.current.reset()
   }
 
   return (
-    <section className="container pb-10 mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <section className="container pb-10 mt-64 flex justify-between items-center px-8 md:px-14 lg:px-24 w-full">
       <div className="w-full">
         <h2 className="secondary-title">Contact</h2>
         <p class="text-secondary my-6 w-full max-w-3xl">
@@ -66,7 +72,20 @@ const Contact = () => {
                 class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"
               />
             </div>
-            <button class="px-6 py-2 bg-theme text-white font-bold">
+
+            <div
+              className={
+                sent ? "px-6 py-2 text-white font-bold bg-green-600" : "hidden"
+              }
+            >
+              Inquiry Sent!
+            </div>
+
+            <button
+              class={
+                sent ? "hidden" : "px-6 py-2 bg-theme text-white font-bold"
+              }
+            >
               Send
             </button>
           </form>
