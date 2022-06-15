@@ -5,6 +5,9 @@ import Navbar from "../components/Navbar"
 import Projects from "../components/Projects"
 import Skills from "../components/Skills"
 
+import skillsData from "../data/skills"
+import projectData from "../data/projects"
+
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
@@ -12,8 +15,8 @@ export default function Home() {
         <Navbar />
         <Hero />
       </div>
-      <Skills />
-      <Projects />
+      <Skills skillsData={skillsData} />
+      <Projects projectData={projectData} />
       <Contact />
     </div>
   )

@@ -1,0 +1,55 @@
+import {
+  htmlLogo,
+  cssLogo,
+  javascriptLogo,
+  reactLogo,
+  nextLogo,
+  gatsbyLogo,
+  tailwindLogo,
+  sassLogo,
+  jqueryLogo,
+  firebaseLogo,
+  postgresqlLogo,
+  rubyLogo,
+  expressLogo,
+  nodeLogo,
+  puppeteerLogo,
+  cypressLogo,
+  jestLogo,
+  gitLogo,
+  stripeLogo,
+  mochaLogo,
+  chaiLogo,
+} from "../../static/tech-logos/index"
+const skillsData = {
+  frontEndSkills: [
+    ["HTML", htmlLogo],
+    ["CSS", cssLogo],
+    ["Javascript", javascriptLogo],
+    ["NextJS", nextLogo],
+    ["React", reactLogo],
+    ["Gatsby", gatsbyLogo],
+    ["Tailwind", tailwindLogo],
+    ["SASS", sassLogo],
+    ["jQuery", jqueryLogo],
+  ],
+
+  backEndSkills: [
+    ["PostgreSQL", postgresqlLogo],
+    ["NodeJS", nodeLogo],
+    ["Ruby", rubyLogo],
+    ["Firebase", firebaseLogo],
+    ["Express", expressLogo],
+    ["Puppeteer", puppeteerLogo],
+  ],
+  utilitiesSkills: [
+    ["Git", gitLogo],
+    ["Cypress", cypressLogo],
+    ["Jest", jestLogo],
+    ["Stripe", stripeLogo],
+    ["Mocha", mochaLogo],
+    ["Chai", chaiLogo],
+  ],
+}
+
+export default skillsData

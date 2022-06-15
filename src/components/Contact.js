@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 import emailjs from "@emailjs/browser"
-import { githubLogo } from "../../static"
+import { githubLogo } from "../../static/tech-logos"
 import { useState } from "react"
 
 const Contact = () => {
