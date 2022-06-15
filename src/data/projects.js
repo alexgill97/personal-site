@@ -23,13 +23,15 @@ import {
   githubLogo,
 } from "../../static/tech-logos"
 
+import project1 from "../../static/project-screenshots/index"
+
 const projectData = {
   project1: {
     title: "Content Connector",
     description:
       "A streamlined content production solution connecting businesses with local digital media creators. As a business, create an ",
     features: [],
-    images: [],
+    images: project1,
     link: "https://github.com/alexgill97/Content-Connector",
     technologies: [
       ["NextJS", nextLogo],

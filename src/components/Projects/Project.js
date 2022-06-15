@@ -35,7 +35,9 @@ const Project = ({ project }) => {
         </div>
         <div className="h-1/2 p-5 flex flex-col items-center content-center justify-center justify-items-center	">
           <div className="text-lg mb-2">{project.title}</div>
-          <div className="text-sm text-slate-300">{project.description}</div>
+          <div className="text-sm text-slate-300 text-center">
+            {project.description}
+          </div>
           <div className="flex justify-around mt-4">
             <button className="px-2 py-1 mr-3 border text-white font-bold flex items-center space-x-3">
               <a href={project.link} target="_blank">{`</> Code`}</a>
