@@ -21,7 +21,10 @@ import puppeteerLogo from "./puppeteer.svg"
 import cypressLogo from "./cypress.svg"
 import jestLogo from "./jest.svg"
 import gitLogo from "./git.svg"
+import googlemapsLogo from "./googlemaps.svg"
+import mapboxLogo from "./mapbox.svg"
 import stripeLogo from "./stripe.svg"
+import storybookLogo from "./storybook.svg"
 import mochaLogo from "./mocha.svg"
 import chaiLogo from "./chai.svg"
 
@@ -47,7 +50,10 @@ export {
   cypressLogo,
   jestLogo,
   gitLogo,
+  googlemapsLogo,
+  mapboxLogo,
   stripeLogo,
+  storybookLogo,
   mochaLogo,
   chaiLogo,
   githubLogo,
