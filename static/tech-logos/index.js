@@ -16,6 +16,7 @@ import rubyLogo from "./ruby.svg"
 import expressLogo from "./express.svg"
 import nodeLogo from "./nodejs.svg"
 import puppeteerLogo from "./puppeteer.svg"
+import railsLogo from "./rails.svg"
 
 //Utilities
 import cypressLogo from "./cypress.svg"
@@ -27,6 +28,7 @@ import stripeLogo from "./stripe.svg"
 import storybookLogo from "./storybook.svg"
 import mochaLogo from "./mocha.svg"
 import chaiLogo from "./chai.svg"
+import rspecLogo from "./rspec.svg"
 
 //Other
 import githubLogo from "./github.svg"
@@ -44,6 +46,7 @@ export {
   firebaseLogo,
   postgresqlLogo,
   rubyLogo,
+  railsLogo,
   expressLogo,
   nodeLogo,
   puppeteerLogo,
@@ -56,5 +59,6 @@ export {
   storybookLogo,
   mochaLogo,
   chaiLogo,
+  rspecLogo,
   githubLogo,
 }

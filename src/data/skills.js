@@ -11,6 +11,7 @@ import {
   firebaseLogo,
   postgresqlLogo,
   rubyLogo,
+  railsLogo,
   expressLogo,
   nodeLogo,
   puppeteerLogo,
@@ -20,7 +21,9 @@ import {
   stripeLogo,
   mochaLogo,
   chaiLogo,
+  rspecLogo,
 } from "../../static/tech-logos/index"
+
 const skillsData = {
   frontEndSkills: [
     ["HTML", htmlLogo],
@@ -41,6 +44,7 @@ const skillsData = {
     ["Firebase", firebaseLogo],
     ["Express", expressLogo],
     ["Puppeteer", puppeteerLogo],
+    ["Rails", railsLogo],
   ],
   utilitiesSkills: [
     ["Git", gitLogo],
@@ -49,6 +53,7 @@ const skillsData = {
     ["Stripe", stripeLogo],
     ["Mocha", mochaLogo],
     ["Chai", chaiLogo],
+    ["RSpec", rspecLogo],
   ],
 }
 

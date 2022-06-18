@@ -5,7 +5,7 @@ const Project = ({ project }) => {
   return (
     <section className="container flex flex-col md:flex-row min-h-fit h-full border overflow-contain p-5 my-4">
       {/* Left Section */}
-      <div className="w-full md:w-1/2 h-fit">
+      <div className="w-full md:w-1/2 h-fit mb-16 md:mr-6 md:mb-0">
         <h4 className="text-sm text-slate-400 mb-4">Info</h4>
         <div className="h-3/4">
           <h5 className="text-lg mb-2">Key Features:</h5>
@@ -17,11 +17,14 @@ const Project = ({ project }) => {
         </div>
         <div className="mt-3">
           <h5>Technologies Used:</h5>
-          <div className=" mt-5 flex h-20 justify-evenly">
+          <div className=" md:mt-5 h-20 grid grid-cols-3 lg:grid-cols-4 ">
             {project.technologies.map(technology => (
-              <div key={technology[0]} className="flex flex-col align-center">
+              <div
+                key={technology[0]}
+                className="h-20 md:44 flex flex-col align-center justify-center"
+              >
                 <img className="h-1/2 mb-1" src={technology[1]} />
-                <p>{technology[0]}</p>
+                <p className="text-center ">{technology[0]}</p>
               </div>
             ))}
           </div>
@@ -29,7 +32,7 @@ const Project = ({ project }) => {
       </div>
 
       {/* Right Section */}
-      <div className="bg-theme w-full lg:w-3/4 h-full">
+      <div className="bg-input w-full lg:w-3/4 h-full">
         <div className="w-full h-80">
           <Slider images={project.images} />
         </div>
