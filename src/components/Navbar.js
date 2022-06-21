@@ -7,9 +7,9 @@ const Navbar = () => {
         <div className="text-3xl font-bold">Alex Gillespie</div>
       </div>
       <div className="hidden md:flex space-x-12 items-center text-lg">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#work">Projects</a>
-
-        <a href="#resume">Skills</a>
 
         <a href="#message">
           <button className="px-6 py-2 bg-blue-700 font-bold">Contact</button>

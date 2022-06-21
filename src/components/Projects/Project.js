@@ -32,7 +32,7 @@ const Project = ({ project }) => {
       </div>
 
       {/* Right Section */}
-      <div className="bg-input w-full lg:w-3/4 h-full">
+      <div className="bg-badge w-full lg:w-3/4 h-full">
         <div className="w-full h-80">
           <Slider images={project.images} />
         </div>
@@ -45,7 +45,7 @@ const Project = ({ project }) => {
             <button className="px-2 py-1 mr-3 border text-white font-bold flex items-center space-x-3">
               <a href={project.link} target="_blank">{`</> Code`}</a>
             </button>
-            <button className="ml-3">{`Visit`}</button>
+            {/* <button className="ml-3">{`Visit`}</button> */}
           </div>
         </div>
       </div>

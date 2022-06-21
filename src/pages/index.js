@@ -16,9 +16,9 @@ export default function Home() {
         <Navbar />
         <Hero />
       </div>
+      <About />
       <Skills skillsData={skillsData} />
       <Projects projectData={projectData} />
-      <About />
       <Contact />
     </div>
   )
