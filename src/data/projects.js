@@ -28,7 +28,12 @@ import {
   railsLogo,
 } from "../../static/tech-logos"
 
-import project1 from "../../static/project-screenshots/index"
+import {
+  project1,
+  project2,
+  project3,
+  project4,
+} from "../../static/project-screenshots/index"
 
 const projectData = {
   project1: {
@@ -59,7 +64,7 @@ const projectData = {
       "Jest and Storybook unit testing",
       "Single-page-application behaviour",
     ],
-    images: [],
+    images: project2,
     githubLink: "",
     visitLink: "",
     technologies: [
@@ -79,7 +84,7 @@ const projectData = {
       "Authenticated users can create and modify maps",
       "Users can favourite a desired map for future reference",
     ],
-    images: [],
+    images: project3,
     githubLink: "",
     visitLink: "",
     technologies: [
@@ -98,7 +103,7 @@ const projectData = {
       "Multi-level user authentication",
       "RSpec unit testing",
     ],
-    images: [],
+    images: project4,
     githubLink: "",
     visitLink: "",
     technologies: [

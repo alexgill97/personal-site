@@ -33,7 +33,7 @@ const Project = ({ project }) => {
 
       {/* Right Section */}
       <div className="bg-badge w-full lg:w-3/4 h-full">
-        <div className="w-full h-80">
+        <div className="w-full h-80 ">
           <Slider images={project.images} />
         </div>
         <div className="h-1/2 p-5 flex flex-col items-center content-center justify-center justify-items-center	">

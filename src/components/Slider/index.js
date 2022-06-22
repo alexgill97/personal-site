@@ -33,7 +33,7 @@ const Slider = ({ images }) => {
           className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
         >
           <img
-            className="h-full w-full object-cover lg:object-fill"
+            className="h-full w-full object-cover lg:object-cover"
             src={image}
           />
         </div>
