@@ -13,6 +13,9 @@ import is03 from "./interview-scheduler/added.png"
 import is04 from "./interview-scheduler/delete.png"
 
 //Map Wiki
+import mw01 from "./map-wiki/home-no-user.png"
+import mw02 from "./map-wiki/login.png"
+import mw03 from "./map-wiki/home-user.png"
 
 //Jungle
 import jg01 from "./jungle-rails/home.png"
@@ -25,7 +28,7 @@ const project1 = [cc01, cc02, cc03, cc04, cc05, cc06]
 
 const project2 = [is01, is02, is03, is04]
 
-const project3 = []
+const project3 = [mw01, mw02, mw03]
 
 const project4 = [jg01, jg02, jg03, jg04, jg05]
 
