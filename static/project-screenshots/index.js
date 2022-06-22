@@ -9,8 +9,8 @@ import cc06 from "./content-connector/portfolio.png"
 //Interview Scheduler
 import is01 from "./interview-scheduler/home.png"
 import is02 from "./interview-scheduler/create.png"
-import is03 from "./interview-scheduler/added.png"
-import is04 from "./interview-scheduler/delete.png"
+import is03 from "./interview-scheduler/delete.png"
+import is04 from "./interview-scheduler/full.png"
 
 //Map Wiki
 import mw01 from "./map-wiki/home-no-user.png"
