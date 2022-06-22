@@ -18,7 +18,8 @@
     "@fontsource/poppins": "^4.5.8",
     "gatsby": "^4.14.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-scroll": "^1.8.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",

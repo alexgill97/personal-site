@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-scroll"
 
 const Navbar = () => {
   return (
@@ -7,7 +8,9 @@ const Navbar = () => {
         <div className="text-3xl font-bold">Alex Gillespie</div>
       </div>
       <div className="hidden md:flex space-x-12 items-center text-lg">
-        <a href="#about">About</a>
+        <Link to="about" smooth="true">
+          <a href="">About</a>
+        </Link>
         <a href="#skills">Skills</a>
         <a href="#work">Projects</a>
 
