@@ -11,15 +11,13 @@ import projectData from "../data/projects"
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden">
-      <div className="h-screen w-screen overflow-hidden">
-        <Navbar />
-        <Hero />
-      </div>
+    <>
+      <Navbar />
+      <Hero />
       <About />
       <Skills skillsData={skillsData} />
       <Projects projectData={projectData} />
       <Contact />
-    </div>
+    </>
   )
 }

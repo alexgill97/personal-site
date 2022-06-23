@@ -3,10 +3,7 @@ import resumePDF from "../documents/Resume.pdf"
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="container px-8 mt-36 md:px-14 lg:px-24 w-full"
-    >
+    <div id="about" className="container px-8 mt-36 md:px-14 lg:px-24 w-full">
       <div className="w-full">
         <h2 className="secondary-title">About</h2>
         <div className="mt-10 flex flex-col space-y-6 text-slate-300">
@@ -44,7 +41,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

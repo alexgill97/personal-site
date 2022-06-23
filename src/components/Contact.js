@@ -34,7 +34,10 @@ const Contact = () => {
   }
 
   return (
-    <section className="container pb-10 mt-64 flex justify-between items-center px-8 md:px-14 lg:px-24 w-full">
+    <section
+      id="contact"
+      className="container pb-10 mt-64 flex justify-between items-center px-8 md:px-14 lg:px-24 w-full"
+    >
       <div className="w-full">
         <h2 className="secondary-title">Contact</h2>
         <p class="text-secondary my-6 w-full max-w-3xl">

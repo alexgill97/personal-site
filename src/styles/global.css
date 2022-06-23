@@ -5,10 +5,8 @@
 html,
 body {
   background-color: #17171f;
-  /* background-color: #020013; */
   color: white;
   font-family: "Poppins";
-  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 

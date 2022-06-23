@@ -3,7 +3,7 @@ import Project from "./Project"
 
 const Projects = ({ projectData }) => {
   return (
-    <div className="px-8 md:px-14 lg:px-24 w-full">
+    <div id="projects" className="px-8 md:px-14 lg:px-24 w-full">
       <div className="mb-5 secondary-title">Projects</div>
       <div className="flex flex-col ">
         <Project project={projectData.project1} />

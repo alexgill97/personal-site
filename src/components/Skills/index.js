@@ -3,7 +3,10 @@ import Skill from "./Skill"
 
 const Skills = ({ skillsData }) => {
   return (
-    <section className="px-8 lg:h-screen mt-36 md:px-14 lg:px-24 w-full">
+    <section
+      id="skills"
+      className="px-8 lg:h-screen mt-36 md:px-14 lg:px-24 w-full"
+    >
       <div className="w-full">
         <h2 className="secondary-title">Skills</h2>
         <p class="text-secondary my-6 w-full max-w-3xl">
